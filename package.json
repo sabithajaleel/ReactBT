@@ -1,0 +1,70 @@
+{
+  "name": "battery-tracking",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "@azure/msal-browser": "^2.32.1",
+    "@azure/msal-react": "^1.5.1",
+    "@craco/craco": "^7.0.0",
+    "@microsoft/signalr": "^7.0.3",
+    "@react-google-maps/api": "^2.18.1",
+    "@reduxjs/toolkit": "^1.9.3",
+    "antd": "^4.24.6",
+    "antd-dayjs-webpack-plugin": "^1.0.6",
+    "axios": "^1.2.1",
+    "craco-less": "^2.0.0",
+    "dayjs": "^1.11.7",
+    "env-cmd": "^10.1.0",
+    "file-saver": "^2.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
+    "styled-components": "^5.3.6",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "env-cmd -e dev craco start",
+    "start:test": "env-cmd -e test craco start",
+    "start:uat": "env-cmd -e uat craco start",
+    "start:prod": "env-cmd -e prod craco start",
+    "build:dev": "env-cmd -e dev craco build",
+    "build": "env-cmd -e prod craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,json}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.1"
+  }
+}
